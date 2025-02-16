@@ -48,18 +48,16 @@ const Home = () => {
           <p className="w-3/4 text-white opacity-90">Fullstack Web Developer</p>
         </div>
         <div className="mt-6 flex flex-col gap-3 w-full">
-          {data.map(
-            (data: { id: number; title: string; link: string; icon: any }) => (
-              <Link
-                key={data.id}
-                href={data.link}
-                className="flex items-center gap-3 justify-center w-full text-lg font-semibold border-2 border-white p-3 rounded-lg bg-white/20 shadow-md backdrop-blur-sm text-white hover:bg-white hover:text-black hover:-translate-y-1 transition-all duration-200"
-              >
-                {data.icon}
-                {data.title}
-              </Link>
-            )
-          )}
+          {data.map((data) => (
+            <Link
+              key={data.id}
+              href={data.link}
+              className="flex items-center gap-3 justify-center w-full text-lg font-semibold border-2 border-white p-3 rounded-lg bg-white/20 shadow-md backdrop-blur-sm text-white hover:bg-white hover:text-black hover:-translate-y-1 transition-all duration-200"
+            >
+              {data.icon}
+              {data.title}
+            </Link>
+          ))}
         </div>
       </section>
     </main>
