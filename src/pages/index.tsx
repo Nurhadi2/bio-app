@@ -23,7 +23,7 @@ const data = [
   {
     id: 3,
     title: "github",
-    link: "https://www.instagram.com/adi_sasono30/",
+    link: "https://github.com/Nurhadi2",
     icon: <FaGithub />,
   },
 ];
