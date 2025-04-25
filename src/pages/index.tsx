@@ -1,7 +1,7 @@
 import { Outfit } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 const outtfit = Outfit({
   subsets: ["latin"],
@@ -25,6 +25,12 @@ const data = [
     title: "github",
     link: "https://github.com/Nurhadi2",
     icon: <FaGithub />,
+  },
+  {
+    id: 4,
+    title: "WhatsApp",
+    link: "https://api.whatsapp.com/send?phone=6281242099765&text=Halo%20Sapponya",
+    icon: <FaWhatsapp />,
   },
 ];
 
